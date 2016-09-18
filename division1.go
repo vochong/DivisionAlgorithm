@@ -18,7 +18,7 @@ func main() {
 	b = 13213127
 	n1 = 100
 	string1 = divide(a,b,n1)
-	fmt.Println("\n",a," / ",b," to ",n1," decimial digits of precision is ")
+	fmt.Println("\n",a," / ",b," to ",n1," decimal digits of precision is ")
 	fmt.Print(string1,"\n\n")
 
 
