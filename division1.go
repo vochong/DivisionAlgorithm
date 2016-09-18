@@ -159,7 +159,7 @@ func f10v3(n, a, p, q int) int {
 	s = t2
 	s = (s*a)%p1
 	s = (s*t)%p1
-	s = (s+(p-1))/p
+	s = (s+(p1-1))/p
 	s = s%q
 	return s
 }
