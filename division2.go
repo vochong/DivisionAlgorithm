@@ -382,11 +382,10 @@ func divide(a, b, n1 int) string{
 since digits only works in the case that gcd(10, b/gcd(a,b)) = 1
 If gcd(10, b/gcd(a,b)) = 1 then digits2 returns the output y
 with y.string1 identical to the output of digits and with y.c = 0.
-If gcd(10, b,gcd(a,b)) > 1 then y.c will equal how many digits
+If gcd(10, b/gcd(a,b)) > 1 then y.c will equal how many digits
 have to be skipped in the decimal expansion a/b to get to the first
 digit of the repeating part and y.string1 will equal the n1 to n2 digits
-in the repeating part of the decimal expansion of a/b
- */
+in the repeating part of the decimal expansion of a/b */
 func digits2(a, b, n1, n2 int) dt{
 	var t,i,s,c,c1,c2,e int
 	var flag byte
