@@ -1,19 +1,21 @@
 """ This program can be used to calculate value of a/b
 to arbitrary precision for any two given integers a and b provided
-that gcd(10,b/gcd(a mod b,b)) = 1  If gcd(a mod b,b) = 1 then this is
+that gcd(10,b/gcd(a,b)) = 1  If gcd(a,b) = 1 then this is
 equivalent to requiring that gcd(10,b) = 1
-There are two main functions in this program:
+There are three main functions in this program:
 (1) divide(a,b,n1) which calculates a/b to n1 decimal digits of precision
 (2) digits(a,b,n1,n2) which calculates the n1 to n2 digits in the fractional
 part of the decimal expansion of a/b
-The function digits is efficient even if n1 is a large integer provided that
-n2 - n1 is reasonably small.  Other division algortihms such as subtractive
-methods or multiplicative (iterative) methods such as or Newton-Raphson
-are not efficient or computationally feasible for large values of n1.
+(3) digits2(a,b,n1,n2) which calculates the n1 to n2 digits in the repeating
+part of the fractional part of the decimal expansion of a/b.  This function
+works even if gcd(10,b/gcd(a,b)) > 1.
+The function digits and digits2 are efficient even if n1 is a large integer provided
+that n2 - n1 is reasonably small.  Other division algortihms such as subtractive
+methods (digit recurrence methods) or multiplicative (iterative) methods such as
+Newton-Raphson are not efficient or computationally feasible for large values of n1.
 The output of both functions is returned as a string.  See the comments
-in front of the definitions of both of the functions divide and digits
+in front of the definitions of the functions divide, digits, and digits2
 below for more information """
-
 
 """ This calculates g^e (mod n) for integers e,g, and n """
 def exp1(e,g,n):
@@ -48,7 +50,6 @@ def is_prime(p):
         b = False
     return(b)
 
-
 """ Finds a prime p such that p = 1 (mod c) and p > c*m
 If c is odd then the prime p = 3 (mod 4)
 If 2^a divides c and 2^(a+1) does not divide c where a>0
@@ -69,7 +70,6 @@ def findprime(c,m):
         i = i+2
     return(t1)
 
-
 """ Calculates the greatest commmon divisor of a and b """
 def gcd(a,b):
     a = abs(a)
@@ -81,8 +81,7 @@ def gcd(a,b):
         return(1)
     s = gcd(b%a,a)
     return(s)
-    
-
+  
 """ Recursive algorithm for calculating a^-1 (mod b) assuming gcd(a,b) = 1"""
 def inverse2(a,b):
     if (a==0 or b==0):
@@ -92,7 +91,6 @@ def inverse2(a,b):
     else:
         t = (b-((b*inverse2(b%a,a))//a))
         return(t)
-
 
 def f10v3(n,a,p,q):
     p1 = p*q
@@ -108,7 +106,6 @@ def f10v3(n,a,p,q):
     s = (s*a*t-1)//p
     s = s%q
     return(s)
-
 
 def f10v4(n,a,p):
     n = -n
@@ -293,7 +290,6 @@ def digits2(a,b,n1,n2):
     if (flag==2):
         string1 = "error gcd(10,b/gcd(a,b)) > 1"
     return(c,string1)
-
 
 
 """ Examples """
