@@ -13,7 +13,8 @@ The function digits and digits2 are efficient even if n1 is a large integer prov
 that n2 - n1 is reasonably small.  Other division algortihms such as subtractive
 methods (digit recurrence methods) or multiplicative (iterative) methods such as
 Newton-Raphson are not efficient or computationally feasible for large values of n1.
-The output of both functions is returned as a string.  See the comments
+The output of the functions divide and digits is returned as a string.  
+The function digits2 returns two paramenters an integer and a string. See the comments
 in front of the definitions of the functions divide, digits, and digits2
 below for more information """
 
