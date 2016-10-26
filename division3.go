@@ -1,5 +1,5 @@
 /* This program can be used to calculate the n1 to n2 digits in the
-decimal exoansion of a/b for any two given integers a and b.
+decimal expansion of a/b for any two given integers a and b.
 The function digits works provided that gcd(10,b/gcd(a,b)) = 1
 If gcd(a,b) = 1 then this is equivalent to requiring that gcd(10,b) = 1
 There are three main functions in this program:
