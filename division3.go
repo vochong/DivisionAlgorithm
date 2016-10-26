@@ -17,8 +17,8 @@ provided that n2 - n1 is reasonably small.  Other division algortihms such as
 subtractive methods (digit recurrence methods) or multiplicative (iterative)
 methods such as Newton-Raphson are not efficient or even computationally feasible
 for sufficiently large values of n1.  digits3 is a much less efficient version 
-(for large values of n1) based on division and is given and is given here to 
-compare how much faster the functions digits and digits2 are.
+(for large values of n1) based on floating point division and is given here
+to compare how much faster the functions digits and digits2 are.
 The output of the digits and digits3 functions is returned as a string.
 The output of digits2 is returned as the struct type dt2.
 See the comments in front of the definitions of all three of the functions
