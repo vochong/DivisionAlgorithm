@@ -224,7 +224,7 @@ func f10v4(n, a, p *big.Int) string{
 	s.Mod(s.Mul(s,s1),q)
 	a1.ModInverse(a,q)
 	s.Mod(s.Mul(a1,s),q)
-  t1 := s.String()
+  	t1 := s.String()
 	return t1
 }
 
@@ -252,11 +252,11 @@ func digits(a, b, n1, n2 *big.Int) string{
   var string1 string
   i := big.NewInt(0)
   t := big.NewInt(0)
-	s := big.NewInt(0)
+  s := big.NewInt(0)
   s1 := big.NewInt(0)
   s2 := big.NewInt(0)
-	a1 := big.NewInt(0)
-	b1 := big.NewInt(0)
+  a1 := big.NewInt(0)
+  b1 := big.NewInt(0)
 
   a1.Set(a)
   b1.Set(b)
@@ -317,10 +317,10 @@ func digits2(a, b, n1, n2 *big.Int) dt2{
 	var string1 string
 	var y dt2
 	i := big.NewInt(0)
-  t := big.NewInt(0)
+  	t := big.NewInt(0)
 	s := big.NewInt(0)
-  s1 := big.NewInt(0)
-  s2 := big.NewInt(0)
+  	s1 := big.NewInt(0)
+  	s2 := big.NewInt(0)
 	a1 := big.NewInt(0)
 	b1 := big.NewInt(0)
 
