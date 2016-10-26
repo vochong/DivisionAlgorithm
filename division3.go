@@ -248,44 +248,44 @@ Also this algorithm requires that gcd(10,b/gcd(a,b)) = 1
 If gcd(a,b) = 1 then this is equivalent to requiring that gcd(10,b) = 1 */
 
 func digits(a, b, n1, n2 *big.Int) string{
-  var flag byte
-  var string1 string
-  i := big.NewInt(0)
-  t := big.NewInt(0)
-  s := big.NewInt(0)
-  s1 := big.NewInt(0)
-  s2 := big.NewInt(0)
-  a1 := big.NewInt(0)
-  b1 := big.NewInt(0)
+ 	var flag byte
+  	var string1 string
+  	i := big.NewInt(0)
+  	t := big.NewInt(0)
+  	s := big.NewInt(0)
+  	s1 := big.NewInt(0)
+  	s2 := big.NewInt(0)
+  	a1 := big.NewInt(0)
+  	b1 := big.NewInt(0)
 
-  a1.Set(a)
-  b1.Set(b)
-  a1.Abs(a1)
-  b1.Abs(b1)
-  t.GCD(nil,nil,a1,b1)
-  s.SetInt64(1)
-  if t.Cmp(s)==1{
-    a1.Div(a1,t)
-    b1.Div(b1,t)
-  }
-  s.SetInt64(2)
-  s1.Mod(b1,s)
-  s.SetInt64(5)
-  s2.Mod(b1,s)
-  s.SetInt64(0)
-  flag = 0
-  if (b1.Cmp(s)!=0) && (s1.Cmp(s)==0 || s2.Cmp(s)==0){
-    flag = 2
-    }
-  if (b1.Cmp(s)==0){
-    a1.SetInt64(0)
-    b1.SetInt64(1)
-    flag = 1
-  }
-  if (a1.Cmp(b1)==1){
-    a1.Mod(a1,b1)
-  }
-  string1 = ""
+  	a1.Set(a)
+  	b1.Set(b)
+  	a1.Abs(a1)
+  	b1.Abs(b1)
+  	t.GCD(nil,nil,a1,b1)
+  	s.SetInt64(1)
+  	if t.Cmp(s)==1{
+    		a1.Div(a1,t)
+    		b1.Div(b1,t)
+  	}
+  	s.SetInt64(2)
+  	s1.Mod(b1,s)
+  	s.SetInt64(5)
+  	s2.Mod(b1,s)
+  	s.SetInt64(0)
+  	flag = 0
+  	if (b1.Cmp(s)!=0) && (s1.Cmp(s)==0 || s2.Cmp(s)==0){
+    		flag = 2
+    	}
+  	if (b1.Cmp(s)==0){
+    		a1.SetInt64(0)
+    		b1.SetInt64(1)
+    		flag = 1
+  	}
+  	if (a1.Cmp(b1)==1){
+    		a1.Mod(a1,b1)
+  	}
+  	string1 = ""
 	i.Set(n1)
 	s1.SetInt64(1)
 	for ; i.Cmp(n2)!=1 ; {
@@ -356,57 +356,57 @@ func digits2(a, b, n1, n2 *big.Int) dt2{
 		if s2.Cmp(s)!=0{
 			break
 		}
-}
-s1.SetInt64(5)
-for i1 = 1; i1 < 100; i1++{
-	s2.Mod(b1,s1)
-	if s2.Cmp(s)==0{
-		c2 = c2+1
-		b1.Div(b1,s1)
 	}
-	s2.Mod(b1,s1)
-	if s2.Cmp(s)!=0{
-		break
-	}
-}
-c = c1
-if c2>c1{
-	c = c2
-}
-e = 0
-if c1>c2{
-	e = c1-c2
-}
-if c1<c2{
-	e = c2-c1
-}
-s2.SetInt64(e)
-if c1>c2{
 	s1.SetInt64(5)
-	t.Exp(s1,s2,b1)
-	a1.Mul(a1,t)
-	a1.Mod(a1,b1)
-}
-if c1<c2{
-	s1.SetInt64(2)
-	t.Exp(s1,s2,b1)
-	a1.Mul(a1,t)
-	a1.Mod(a1,b1)
-}
+	for i1 = 1; i1 < 100; i1++{
+		s2.Mod(b1,s1)
+		if s2.Cmp(s)==0{
+			c2 = c2+1
+			b1.Div(b1,s1)
+		}
+		s2.Mod(b1,s1)
+		if s2.Cmp(s)!=0{
+			break
+		}
+	}
+	c = c1
+	if c2>c1{
+		c = c2
+	}
+	e = 0
+	if c1>c2{
+		e = c1-c2
+	}
+	if c1<c2{
+		e = c2-c1
+	}
+	s2.SetInt64(e)
+	if c1>c2{
+		s1.SetInt64(5)
+		t.Exp(s1,s2,b1)
+		a1.Mul(a1,t)
+		a1.Mod(a1,b1)
+	}
+	if c1<c2{
+		s1.SetInt64(2)
+		t.Exp(s1,s2,b1)
+		a1.Mul(a1,t)
+		a1.Mod(a1,b1)
+	}
 
-string1 = ""
-i.Set(n1)
-s1.SetInt64(1)
-for ; i.Cmp(n2)!=1 ; {
-	string1 = string1 + f10v4(i,a1,b1)
-	i.Add(i,s1)
-}
-if flag==1{
-	string1 = "division by 0 error"
-}
-y.c = c
-y.digits = string1
-return y
+	string1 = ""
+	i.Set(n1)
+	s1.SetInt64(1)
+	for ; i.Cmp(n2)!=1 ; {
+		string1 = string1 + f10v4(i,a1,b1)
+		i.Add(i,s1)
+	}
+	if flag==1{
+		string1 = "division by 0 error"
+	}
+	y.c = c
+	y.digits = string1
+	return y
 }
 
 
