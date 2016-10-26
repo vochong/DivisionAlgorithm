@@ -9,7 +9,7 @@ exponentiation modulo b.
 (2) digits2(a,b,n1,n2) which calculates the n1 to n2 digits in the repeating
 part of the fractional part of the decimal expansion of a/b.  This function
 works even if gcd(10,b/gcd(a,b)) > 1.  The function digits2 is based on a new
-and faster method that is based on exponetiation modulo b.
+and faster method that is based on exponentiation modulo b.
 (3) digits3(a,b,n1,n2) calculates the n1 to n2 digits in the fractional part
 of the decimal expansion of a/b using the standard method based on division.
 The functions digits and digits2 are efficient even if n1 is a large integer
