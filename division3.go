@@ -143,7 +143,7 @@ func main() {
 // This function should be deleted or commented out
 // if a different os is being used
 func clear(){
-		cmd := exec.Command("cmd", "/c", "cls")
+	  cmd := exec.Command("cmd", "/c", "cls")
 	  cmd.Stdout = os.Stdout
 	  cmd.Run()
 }
