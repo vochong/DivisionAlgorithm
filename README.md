@@ -1,4 +1,4 @@
-# DivisionAlgorithm
+# Division Algorithm
 Python 3 and Go 1.7 implementations to calculate a/b given two integers a and b to n decimal digits of precision
 
 The main two functions are divide(a,b,n) which calculates a/b to n decimal digits of precision and digits(a,b,n1,n2) which 
