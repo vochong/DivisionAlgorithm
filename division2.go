@@ -269,7 +269,7 @@ For example 1/17 = 0.058823529... so digits(1,17,1,20) = '05882352941176470588'
 which is the first 20 digits in the decimal expansion of 1/17.  The output is
 returned as a string.  This is based on a different division algorithm based on
 exponentiation modulo b which is different from previous methods that are
-referred to as either (1) subtractive methods such as trial division or
+referred to as either (1) subtractive methods or digit recurrence methods or
 (2) multiplicative methods such as Newton-Raphson.  If n = n2 - n1 then this
 algorithm runs O(n log n (log b)^2 + n (log b)^3) time.  Also it should be
 noted that algorithm runs efficiently even if n1 is a very large integer.
