@@ -302,7 +302,6 @@ def convert(a,b):
         t1 = 10*int(s[-2])+int(s[-1])
         t2 = ""
         t2 = t2.zfill(t1)
-        # print(t1,t2)
         t2 = t2+s[0]+s[2:-4]
         s = t2
     else:
@@ -371,7 +370,6 @@ def divide2(a,b,n):
         if flag1==1:
             c = 1
         string2 = s1[0:t[0]+c]
-        # print("string2 = ",string2,"  t[1] = ",t[1])
         string1 = sign+string1+"."+string2+t[1]
     if flag==1:
         string1 = "division by 0 error"
