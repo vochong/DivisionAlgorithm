@@ -301,7 +301,7 @@ def convert(a,b):
     if s[-4]=="e" and s[-3]=="-":
         t1 = 10*int(s[-2])+int(s[-1])
         t2 = ""
-        t2 = t2.zfill(t1)
+        t2 = t2.zfill(t1-1)
         t2 = t2+s[0]+s[2:-4]
         s = t2
     else:
