@@ -8,7 +8,7 @@ There are two main functions in this program:
 part of the decimal expansion of a/b
 The function digits is efficient even if n1 is a large integer provided that
 n2 - n1 is reasonably small.  Other division algortihms such as subtractive
-methods or multiplicative (iterative) methods such as Newton-Raphson 
+methods or multiplicative (iterative) methods  
 are not efficient or computationally feasible for large values of n1.  
 The output of both functions is returned as a string.
 See the comments in front of the definitions of both of the functions divide
@@ -137,7 +137,7 @@ which is the first 20 digits in the decimal expansion of 1/17.  The output is
 returned as a string.  This is based on a different division algorithm based on
 exponentiation modulo b which is different from previous methods that are
 referred to as either (1) subtractive methods or digit recurrence methods or
-(2) multiplicative methods such as Newton-Raphson.  If n = n2 - n1 then this
+(2) multiplicative methods.  If n = n2 - n1 then this
 algorithm runs O(n log n (log b)^2 + n (log b)^3) time.  Also it should be
 noted that algorithm runs efficiently even if n1 is a very large integer.
 For example suppose that b is a 100 digit integer and that n1 is a 1000 digit
