@@ -11,8 +11,8 @@ part of the fractional part of the decimal expansion of a/b.  This function
 works even if gcd(10,b/gcd(a,b)) > 1.
 The function digits and digits2 are efficient even if n1 is a large integer provided
 that n2 - n1 is reasonably small.  Other division algortihms such as subtractive
-methods (digit recurrence methods) or multiplicative (iterative) methods such as
-Newton-Raphson are not efficient or computationally feasible for large values of n1.
+methods (digit recurrence methods) or multiplicative (iterative) methods 
+are not efficient or computationally feasible for large values of n1.
 The output of the functions divide and digits is returned as a string.  
 The function digits2 returns two paramenters an integer and a string. See the comments
 in front of the definitions of the functions divide, digits, and digits2
@@ -142,7 +142,7 @@ which is the first 20 digits in the decimal expansion of 1/17.  The output is
 returned as a string.  This is based on a different division algorithm based on
 exponentiation modulo b which is different from previous methods that are
 referred to as either (1) subtractive methods such or digit recurrence methods or
-(2) multiplicative methods such as Newton-Raphson.  If n = n2 - n1 then this
+(2) multiplicative methods.  If n = n2 - n1 then this
 algorithm runs O(n log n (log b)^2 + n (log b)^3) time.  Also it should be
 noted that algorithm runs efficiently even if n1 is a very large integer.
 For example suppose that b is a 100 digit integer and that n1 is a 1000 digit
