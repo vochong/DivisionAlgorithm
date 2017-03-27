@@ -16,7 +16,8 @@ If gcd(a,b) > 1 then let b1 = b/gcd(a,b) then gcd(b1,10) must be 1 otherwise an 
 
 The following is an example of a python script that calculate division to 100 decimal place of accuracy:
 
-''' python3
+'''python
+
 from division3 import *
 
 a = 1243455434495498469654903493985349490549019934549023567867
