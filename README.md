@@ -2,11 +2,12 @@
 Calculates a/b to n decimal digits of precision given integers a, b and n.
 
 There are golang versions and python 3 versions. The newest python version is division3.py
+
 There are four main functions in division3.py
-* divide(a,b,n)
-* divide2(a,b,n)
-* digits(a,b,n1,n2)
-* digits2(a,b,n1,n2)
+* ```python divide(a,b,n) ```
+* ```python divide2(a,b,n) ```
+* ```python digits(a,b,n1,n2) ```
+* ```python digits2(a,b,n1,n2) ```
 
 Next here are some examples of using these functions in division3.py
 
