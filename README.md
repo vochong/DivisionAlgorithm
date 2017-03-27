@@ -15,7 +15,7 @@ Next here are some examples of using these functions in division3.py
 In order to use the divide function if gcd(a,b) = 1 then gcd(b,10) must be 1 otherwise an error will occur.  
 If gcd(a,b) > 1 then let b1 = b/gcd(a,b) then gcd(b1,10) must be 1 otherwise an error message will be output.
 
-The following is an example of a python script that calculate division to 100 decimal place of accuracy:
+The following is an example of a python script that calculates division to 100 decimal place of accuracy:
 
 ```python
 
@@ -38,3 +38,4 @@ b = 54843812848548794568765842358934894313287487348732874378379
 a/b = 0.0226726657012214125309683389217720652317550324675471858158615046233657821289938566786269005119059332
 ```
 
+In this example the variables a and b can be integers of arbitrary size however the output y will be returned as a string.
