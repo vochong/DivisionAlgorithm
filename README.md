@@ -39,3 +39,8 @@ a/b = 0.022672665701221412530968338921772065231755032467547185815861504623365782
 ```
 
 In this example the variables a and b can be integers of arbitrary size however the output y will be returned as a string.
+
+# Example 2 divide2(a,b,n)
+This is a improved version of the function divide(a,b,n).  Like the function divide, divide2 works in all cases for given integers a,b, and n as long as gcd(b,10) = 1 but unlike divide it works in most cases if gcd(b,10)>1.  Let b1 = b/gcd(a,b).
+If b1 is not divisible by 2^17 which is 131072 and b1 is also not divisible by 5^17 which is 762939453125
+
