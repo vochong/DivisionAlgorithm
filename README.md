@@ -44,3 +44,24 @@ In this example the variables a and b can be integers of arbitrary size however 
 This is a improved version of the function divide(a,b,n).  Like the function divide, divide2 works in all cases for given integers a,b, and n as long as gcd(b,10) = 1 but unlike divide it works in most cases if gcd(b,10)>1.  Let b1 = b/gcd(a,b).
 If b1 is not divisible by 2^17 which is 131072 and b1 is also not divisible by 5^17 which is 762939453125
 
+The following is an example of a script using the function divide2:
+
+```python
+from division3 import *
+
+a = 34329804329054324324349865294321238390324609435465789876543958423904539076023134295647
+t1 = 2970524338954839323842046534309342412487956546707676875645324365749
+t2 = 2**11
+t3 = 5**16
+b = t1*t2*t3
+y = divide2(a,b,100)
+
+print("\n\na =",a,"\nb =",b)
+print("\na/b =",y)
+```
+
+
+
+
+
+
