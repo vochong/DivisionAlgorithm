@@ -41,10 +41,10 @@ a/b = 0.022672665701221412530968338921772065231755032467547185815861504623365782
 In this example the variables a and b can be integers of arbitrary size however the output y will be returned as a string.
 
 # Example 2 divide2(a,b,n)
-This is a improved version of the function divide(a,b,n).  Like the function divide, divide2 works in all cases for given integers a,b, and n provided that gcd(b,10) = 1. But unlike divide it works in most cases if gcd(b,10)>1.  Let b1 = b/gcd(a,b).
-If b1 is not divisible by 2^17 which is 131072 and b1 is also not divisible by 5^17 which is 762939453125
+This is a improved version of the function divide(a,b,n).  Like the function divide, divide2 works in all cases for given integers a,b, and n provided that gcd(b,10) = 1. But unlike divide it works in most cases if gcd(b,10)>1.  Let b1 = b/gcd(a,b),
+if b1 is not divisible by 2^17 which is 131072 and b1 is also not divisible by 5^17 which is 762939453125 then the divide2 will be able to calculate a/b to n decimal digits of accuracy. 
 
-The following is an example of a script using the function divide2:
+The following is an example of a script using the function divide2.
 
 ```python
 from division3 import *
