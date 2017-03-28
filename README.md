@@ -41,7 +41,7 @@ a/b = 0.022672665701221412530968338921772065231755032467547185815861504623365782
 In this example the variables a and b can be integers of arbitrary size however the output y will be returned as a string.
 
 # Example 2 divide2(a,b,n)
-This is a improved version of the function divide(a,b,n).  Like the function divide, divide2 works in all cases for given integers a,b, and n as long as gcd(b,10) = 1 but unlike divide it works in most cases if gcd(b,10)>1.  Let b1 = b/gcd(a,b).
+This is a improved version of the function divide(a,b,n).  Like the function divide, divide2 works in all cases for given integers a,b, and n provided that gcd(b,10) = 1. But unlike divide it works in most cases if gcd(b,10)>1.  Let b1 = b/gcd(a,b).
 If b1 is not divisible by 2^17 which is 131072 and b1 is also not divisible by 5^17 which is 762939453125
 
 The following is an example of a script using the function divide2:
@@ -60,6 +60,14 @@ print("\n\na =",a,"\nb =",b)
 print("\na/b =",y)
 ```
 
+And this is the output for example 2.
+
+```python
+a = 34329804329054324324349865294321238390324609435465789876543958423904539076023134295647 
+b = 928288855923387288700639541971669503902486420846149023639163864296562500000000000
+
+a/b = 36981.812406770507693878541864124872024030059776230289624642191924110009560341370556409052860988185951531490725876677214435123250340112204441558614373129741999728670326834177744232242567865660165243410311687772917419309435
+```
 
 
 
