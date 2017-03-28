@@ -1,6 +1,7 @@
 # Division Algorithm
 Calculates a/b to n decimal digits of precision given integers a, b and n.
-There are golang versions and python 3 versions. The newest python version is division3.py
+There are golang versions and python 3 versions. 
+The newest python version is division3.py
 
 There are four main functions in division3.py
 * ``` divide(a,b,n) ```
@@ -53,7 +54,7 @@ t1 = 2970524338954839323842046534309342412487956546707676875645324365749
 t2 = 2**11
 t3 = 5**16
 b = t1*t2*t3
-y = divide2(a,b,100)
+y = divide2(a,b,180)
 
 print("\n\na =",a,"\nb =",b)
 print("\na/b =",y)
