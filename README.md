@@ -103,7 +103,7 @@ d = 27586206896
 
 t = 9655172413
 ```
-k is equal to 632/29 to 58 decimal places of accuracy.  The variable c is equal to the 1st to the 28th digits in the decimal expansion of 632/29 whereas d equals the 10th to the 20th digits.  The functions digits also allows for the parameters n1 and n2 to be 0 or negative integers.  If 0 is used as a value for n1 or n2 this denotes the last digit in the decimal expansion of a/b before it starts repeating, -1 denotes the next to last and so on.  Therefore t returns the last 10 digits in the decimal expansion of the fractional part of 632/29 before it starts repeating.
+k is equal to 632/29 to 56 decimal places of accuracy.  The variable c is equal to the 1st to the 28th digits in the decimal expansion of 632/29 whereas d equals the 10th to the 20th digits.  The functions digits also allows for the parameters n1 and n2 to be 0 or negative integers.  If 0 is used as a value for n1 or n2 this denotes the last digit in the decimal expansion of a/b before it starts repeating, -1 denotes the next to last and so on.  Therefore t returns the last 10 digits in the decimal expansion of the fractional part of 632/29 before it starts repeating.
 
 The following is another example using large integers that illustrates how in many cases the function digits is much more efficient than other more convential division algorithms:
 
