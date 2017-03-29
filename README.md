@@ -145,3 +145,5 @@ k = 530885742165702296952553483592649507952301281362994
 t = 40916999596875838501
 ```
 
+First notice that in this example a was first defined to be a string by adding two strings together and then converting that string to an integer.  This wasn't necessary, but was done in this example so that everything would fit on one line.  
+a is just some random 158 digit number and b is a 521 bit or 157 digit prime number.
