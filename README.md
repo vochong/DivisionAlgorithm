@@ -145,5 +145,4 @@ k = 530885742165702296952553483592649507952301281362994
 t = 40916999596875838501
 ```
 
-First notice that in this example a was first defined to be a string by adding two strings together and then converting that string to an integer.  This wasn't necessary, but was done in this example so that everything would fit on one line.  
-a is just some random 158 digit number and b is a 521 bit or 157 digit prime number.
+First notice that in this example a was first defined to be a string by adding two strings together and then converting that string to an integer.  This wasn't necessary, but was done in this example so that it would be easier to read and so hopefully there won't be any problems if someone copies and pastes this example.  The variable a is just some random 158 digit number and b is a 521 bit or 157 digit prime number.  This program outputs k which is the n1 to n2 digits in the decimal expansion of a/b and t which is the last 20 digits in the decimal expansion of a/b before it starts repeating.  Using more convential floating point division algorithms calculating either of these two values would be impossible.  For example to calculate the value of k using other more commonly used floating point division algorithms, one would have to calculate a/b to n2 digits of accuracy.  Given how large n2 is in this example, this would be impossible.
