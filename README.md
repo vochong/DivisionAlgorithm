@@ -104,3 +104,44 @@ d = 27586206896
 t = 9655172413
 ```
 k is equal to 632/29 to 58 decimal places of accuracy.  The variable c is equal to the 1st to the 28th digits in the decimal expansion of 632/29 whereas d equals the 10th to the 20th digits.  The functions digits also allows for the parameters n1 and n2 to be 0 or negative integers.  If 0 is used as a value for n1 or n2 this denotes the last digit in the decimal expansion of a/b before it starts repeating, -1 denotes the next to last and so on.  Therefore t returns the last 10 digits in the decimal expansion of the fractional part of 632/29 before it starts repeating.
+
+The following is another example using large integers that illustrates how in many cases the function digits is much more efficient than other more convential division algorithms:
+
+```python
+from division3 import *
+
+a = "142319824384532854895453109433405954879568976589076768767790823490239183527578"
+a = a + "95145689454512123432458670489765325768123589231654362785348798142342312568943651"
+a = int(a)
+b = 2**521-1
+n1 = 2**400
+n2 = n1+50
+
+print("\na =",a)
+print("\nb =",b)
+print("\nn1 =",n1)
+print("\nn2 =",n2)
+
+k = digits(a,b,n1,n2)
+print("\nk =",k)
+
+t = digits(a,b,-19,0)
+print("\nt =",t)
+```
+
+The output from this example is:
+
+```python
+a = 14231982438453285489545310943340595487956897658907676876779082349023918352757895145689454512123432458670489765325768123589231654362785348798142342312568943651
+
+b = 6864797660130609714981900799081393217269435300143305409394463459185543183397656052122559640661454554977296311391480858037121987999716643812574028291115057151
+
+n1 = 2582249878086908589655919172003011874329705792829223512830659356540647622016841194629645353280137831435903171972747493376
+
+n2 = 2582249878086908589655919172003011874329705792829223512830659356540647622016841194629645353280137831435903171972747493426
+
+k = 530885742165702296952553483592649507952301281362994
+
+t = 40916999596875838501
+```
+
