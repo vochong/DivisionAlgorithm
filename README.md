@@ -70,6 +70,25 @@ a/b = 36981.81240677050769387854186412487202403005977623028962464219192411000956
 59515314907258766772144351232503401122044415586143731297419997286703268341777442322425678656601652434103
 ```
 
+# Example 3 digits(a,b,n1,n2)
+Similar to the function divide the function digits in order to work correctly requires that if gcd(a,b) = 1 that gcd(b,10) = 1.  If gcd(a,b)>1 let b1 = b/gcd(a,b) it requires that gcd(b1,10) = 1 otherwise an error message will be output.  The function digits(a,b,n1,n2) calculates the n1 to n2 digits in the decimal expansion of the fractional part of a/b.  For example the following python script illustrates this:
 
+```python
+from division3 import *
 
+a = 632
+b = 29
+
+k = divide(a,b,56)
+print("\nk =",k)
+
+c = digits(a,b,1,28)
+print("\nc =",c)
+
+d = digits(a,b,10,20)
+print("\nd =",d)
+
+t = digits(a,b,-9,0)
+print("\nt =",t)
+```
 
