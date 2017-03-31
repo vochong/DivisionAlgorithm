@@ -1,5 +1,5 @@
 # Division Algorithm
-Calculates *a/b* to n decimal digits of precision given integers *a*, *b*and *n*.
+Calculates *a/b* to *n* decimal digits of precision given integers *a*, *b* and *n*.
 There are golang versions and python 3 versions. 
 The newest python version is division3.py
 
@@ -38,7 +38,7 @@ b = 54843812848548794568765842358934894313287487348732874378379
 k = 0.0226726657012214125309683389217720652317550324675471858158615046233657821289938566786269005119059332
 ```
 
-In this example the variables a and b can be integers of arbitrary size however the output k will be returned as a string.
+In this example the variables *a* and *b* can be integers of arbitrary size however the output *k* will be returned as a string.
 
 # Example 2 divide2(a,b,n)
 This is a improved version of the function divide(a,b,n).  Like the function divide, divide2 works in all cases for given integers *a*,*b*, and *n* provided that *gcd(b,10) = 1*. But unlike divide it works in most cases if *gcd(b,10)>1*.  Let *b1 = b/gcd(a,b)*, if *b1* is not divisible by 2^17 which is *131072* and *b1* is also not divisible by 5^17 which is *762939453125* then the divide2 will be able to calculate *a/b* to *n* decimal digits of accuracy. 
@@ -70,8 +70,7 @@ a/b = 36981.81240677050769387854186412487202403005977623028962464219192411000956
 ```
 
 # Example 3 digits(a,b,n1,n2)
-Similar to the function divide the function digits in order to work correctly requires that if gcd(a,b) = 1 that gcd(b,10) = 1.
-If gcd(a,b)>1 let b1 = b/gcd(a,b) it requires that gcd(b1,10) = 1 otherwise an error message will be output.  The function digits(a,b,n1,n2) calculates the n1 to n2 digits in the decimal expansion of the fractional part of a/b.  For example the following python script illustrates this:
+Similar to the function divide the function digits in order to work correctly requires that if *gcd(a,b) = 1* that *gcd(b,10) = 1*.  If *gcd(a,b)>1* let *b1 = b/gcd(a,b)* it requires that *gcd(b1,10) = 1* otherwise an error message will be output.  The function digits(a,b,n1,n2) calculates the *n1* to *n2* digits in the decimal expansion of the fractional part of *a/b*.  For example the following python script illustrates this:
 
 ```python
 from division3 import *
@@ -102,7 +101,7 @@ d = 27586206896
 
 t = 9655172413
 ```
-k is equal to 632/29 to 56 decimal places of accuracy.  The variable c is equal to the 1st to the 28th digits in the decimal expansion of 632/29 whereas d equals the 10th to the 20th digits.  The functions digits also allows for the parameters n1 and n2 to be 0 or negative integers.  If 0 is used as a value for n1 or n2 this denotes the last digit in the decimal expansion of a/b before it starts repeating, -1 denotes the next to last and so on.  Therefore t returns the last 10 digits in the decimal expansion of the fractional part of 632/29 before it starts repeating.
+*k* is equal to *632/29* to *56* decimal places of accuracy.  The variable *c* is equal to the *1st* to the *28th* digits in the decimal expansion of *632/29* whereas *d* equals the *10th* to the *20th* digits.  The functions digits also allows for the parameters *n1* and *n2* to be *0* or negative integers.  If *0* is used as a value for *n1* or *n2* this denotes the last digit in the decimal expansion of *a/b* before it starts repeating, *-1* denotes the next to last and so on.  Therefore *t* returns the last *10* digits in the decimal expansion of the fractional part of *632/29* before it starts repeating.
 
 The following is another example using large integers that illustrates how in many cases the function digits is much more efficient than other more convential division algorithms:
 
@@ -144,4 +143,4 @@ k = 530885742165702296952553483592649507952301281362994
 t = 40916999596875838501
 ```
 
-First notice that in this example a was first defined to be a string by adding two strings together and then converting that string to an integer.  This wasn't necessary, but was done in this example so that it would be easier to read and so hopefully there won't be any problems if someone copies and pastes this example.  The variable a is just some random 158 digit number and b is a 521 bit or 157 digit prime number.  This program outputs k which is the n1 to n2 digits in the decimal expansion of a/b and t which is the last 20 digits in the decimal expansion of a/b before it starts repeating.  Using more convential floating point division algorithms calculating either of these two values would be impossible.  For example to calculate the value of k using other more commonly used floating point division algorithms, one would have to calculate a/b to n2 digits of accuracy.  Given how large n2 is in this example, this would be impossible.
+First notice that in this example *a* was first defined to be a string by adding two strings together and then converting that string to an integer.  This wasn't necessary, but was done in this example so that it would be easier to read and so hopefully there won't be any problems if someone copies and pastes this example.  The variable *a* is just some random *158* digit number and *b* is a *521* bit or *157* digit prime number.  This program outputs *k* which is the *n1* to *n2* digits in the decimal expansion of *a/b* and *t* which is the last *20* digits in the decimal expansion of *a/b* before it starts repeating.  Using more convential floating point division algorithms calculating either of these two values would be impossible.  For example to calculate the value of *k* using other more commonly used floating point division algorithms, one would have to calculate *a/b* to *n2* digits of accuracy.  Given how large *n2* is in this example, this would be impossible.
