@@ -1,5 +1,5 @@
 # Division Algorithm
-Calculates a/b to n decimal digits of precision given integers a, b and n.
+Calculates *a/b* to n decimal digits of precision given integers *a*, *b*and *n*.
 There are golang versions and python 3 versions. 
 The newest python version is division3.py
 
@@ -12,10 +12,10 @@ There are four main functions in division3.py
 Next here are some examples of using these functions in division3.py
 
 # Example 1 divide(a,b,n)
-In order to use the divide function if gcd(a,b) = 1 then gcd(b,10) must be 1 otherwise an error will occur.  
-If gcd(a,b) > 1 then let b1 = b/gcd(a,b) then gcd(b1,10) must be 1 otherwise an error message will be output.
+In order to use the divide function if *gcd(a,b) = 1* then *gcd(b,10)* must be *1* otherwise an error will occur.  
+If *gcd(a,b) > 1* then let *b1 = b/gcd(a,b)* then *gcd(b1,10)* must be *1* otherwise an error message will be output.
 
-The following is an example of a python script that calculates division to 100 decimal place of accuracy:
+The following is an example of a python script that calculates division to *100* decimal place of accuracy:
 
 ```python
 
@@ -41,8 +41,7 @@ k = 0.02267266570122141253096833892177206523175503246754718581586150462336578212
 In this example the variables a and b can be integers of arbitrary size however the output k will be returned as a string.
 
 # Example 2 divide2(a,b,n)
-This is a improved version of the function divide(a,b,n).  Like the function divide, divide2 works in all cases for given integers a,b, and n provided that gcd(b,10) = 1. But unlike divide it works in most cases if gcd(b,10)>1.  Let b1 = b/gcd(a,b),
-if b1 is not divisible by 2^17 which is 131072 and b1 is also not divisible by 5^17 which is 762939453125 then the divide2 will be able to calculate a/b to n decimal digits of accuracy. 
+This is a improved version of the function divide(a,b,n).  Like the function divide, divide2 works in all cases for given integers *a*,*b*, and *n* provided that *gcd(b,10) = 1*. But unlike divide it works in most cases if *gcd(b,10)>1*.  Let *b1 = b/gcd(a,b)*, if *b1* is not divisible by 2^17 which is *131072* and *b1* is also not divisible by 5^17 which is *762939453125* then the divide2 will be able to calculate *a/b* to *n* decimal digits of accuracy. 
 
 The following is an example of a script using the function divide2.
 
