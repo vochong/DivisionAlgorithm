@@ -170,7 +170,19 @@ t = digits2(a,b,-19,0)
 print("\nt =",t)
 ```
 
+The following is the output from this script:
 
+```python
+
+a = 29
+b = 124
+
+d = 0.23387096774193548387096774193548
+
+k = (2, '3870967741')
+
+t = (2, '93548387096774193548')
+```
 
 
 
