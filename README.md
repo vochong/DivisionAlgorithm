@@ -155,7 +155,7 @@ The following is a example of a script using the function digits2(a,b,n1,n2):
 from division3 import *
 
 a = 29
-b = 31*4
+b = 124
 
 print("\na =",a)
 print("b =",b)
