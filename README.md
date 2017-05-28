@@ -150,3 +150,28 @@ This is an improved version of the function digits(a,b,n1,n2) and unlike the oth
 
 The following is a example of a script using the function digits2(a,b,n1,n2):
 
+```python
+
+from division3 import *
+
+a = 29
+b = 31*4
+
+print("\na =",a)
+print("b =",b)
+
+d = divide2(a,b,32)
+print("\nd =",d)
+
+k = digits2(a,b,1,10)
+print("\nk =",k)
+
+t = digits2(a,b,-19,0)
+print("\nt =",t)
+```
+
+
+
+
+
+
