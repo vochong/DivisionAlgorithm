@@ -184,6 +184,6 @@ k = (2, '3870967741')
 t = (2, '93548387096774193548')
 ```
 
-
+The variable *d* is equal to *a/b* to 32 decimal digits of accuracy, k is a 2-tuple of an integer 2 and a string.  The value 2 indicates that 2 places have to be skipped until the repeating part of the decimal expansion of *a/b* begins and the string represents the first 10 digits in that decimal expansion.  Similarly for the variable *t* the string represent the last 20 digits in that decimal expansion.
 
 
