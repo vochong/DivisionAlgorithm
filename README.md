@@ -1,15 +1,15 @@
 # Division Algorithm
 Calculates *a/b* to *n* decimal digits of precision given integers *a*, *b* and *n*.
 There are golang versions and python 3 versions. 
-The newest python version is division3.py
+The newest python version is division4.py
 
-There are four main functions in division3.py
+There are four main functions in division4.py
 * ``` divide(a,b,n) ```
 * ``` divide2(a,b,n) ```
 * ``` digits(a,b,n1,n2) ```
 * ``` digits2(a,b,n1,n2) ```
 
-Next here are some examples of using these functions in division3.py
+Next here are some examples of using these functions in division4.py
 
 # Example 1 divide(a,b,n)
 In order to use the divide function if *gcd(a,b) = 1* then *gcd(b,10)* must be *1* otherwise an error will occur.  
@@ -19,7 +19,7 @@ The following is an example of a python script that calculates division to *100*
 
 ```python
 
-from division3 import *
+from division4 import *
 
 a = 1243455434495498469654903493985349490549019934549023567867
 b = 54843812848548794568765842358934894313287487348732874378379
@@ -46,7 +46,7 @@ This is a improved version of the function divide(a,b,n).  Like the function div
 The following is an example of a script using the function divide2.
 
 ```python
-from division3 import *
+from division4 import *
 
 a = 34329804329054324324349865294321238390324609435465789876543958423904539076023134295647
 t1 = 2970524338954839323842046534309342412487956546707676875645324365749
@@ -73,7 +73,7 @@ a/b = 36981.81240677050769387854186412487202403005977623028962464219192411000956
 Similar to the function divide the function digits in order to work correctly requires that if *gcd(a,b) = 1* that *gcd(b,10) = 1*.  If *gcd(a,b)>1* let *b1 = b/gcd(a,b)* it requires that *gcd(b1,10) = 1* otherwise an error message will be output.  The function digits(a,b,n1,n2) calculates the *n1* to *n2* digits in the decimal expansion of the fractional part of *a/b*.  For example the following python script illustrates this:
 
 ```python
-from division3 import *
+from division4 import *
 
 a = 632
 b = 29
@@ -106,7 +106,7 @@ t = 9655172413
 The following is another example using large integers that illustrates how in many cases the function digits is much more efficient than other more convential division algorithms:
 
 ```python
-from division3 import *
+from division4 import *
 
 a = "142319824384532854895453109433405954879568976589076768767790823490239183527578"
 a = a + "95145689454512123432458670489765325768123589231654362785348798142342312568943651"
@@ -152,7 +152,7 @@ The following is a example of a script using the function digits2(a,b,n1,n2):
 
 ```python
 
-from division3 import *
+from division4 import *
 
 a = 29
 b = 124
