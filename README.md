@@ -1,7 +1,6 @@
 # Division Algorithm
 Calculates *a/b* to *n* decimal digits of precision given integers *a*, *b* and *n*.
-There are golang versions and python 3 versions. 
-The newest python version is division4.py
+The newest python 3 version is division4.py
 
 There are four main functions in division4.py
 * ``` divide(a,b,n) ```
