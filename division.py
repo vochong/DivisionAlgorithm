@@ -181,7 +181,7 @@ def digits(a,b,n1,n2):
 of a/b to n1 digits of decimal precision in base 10.  Most previously used
 methods for division fall into one of two categories: (1) subtractive methods
 or digit recurrence methods or (2) multiplicative methods such as
-Newtwon-Raphson.  This is a different method based on exponentiation modulo b
+This is a different method based on exponentiation modulo b
 and this algorithm runs in O(n log n (log b)^2 + n (log b)^3) time.  It can
 be improved to run in O(n log b) time if a < b which in many cases is actually
 faster than previously used methods.  The output is returned as a string.
