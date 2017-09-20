@@ -364,7 +364,7 @@ print("in polynomial time even though n is a very large integer")
 print("(n is approximately 2^256) and this would be computationally")
 print("infeasible with the two other commonly used division methods usually")
 print("referred to as (1) subtractive methods or digit recurrence methods or")
-print("(2) multiplicative methods such as Newton-Raphson")
+print("(2) multiplicative methods")
 print("\n\n")
 
 
